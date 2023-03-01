@@ -17,9 +17,6 @@ mongoose.connection.on("connected", () => {
 });
 const app = express();
 
-/**
- * Middleware section
- */
 app.use(morgan("dev"));
 
 app.use("/uploads", express.static("uploads"));
